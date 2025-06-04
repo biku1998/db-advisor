@@ -49,7 +49,7 @@ There is a need for an automated, repeatable, and extensible tool that can:
 
 ## Project Structure
 
-```
+```txt
 src/
   cli-entry.ts              # CLI entrypoint
   cli/
@@ -109,10 +109,13 @@ npm run update-lints
 ### 3. Set your database URL
 
 - In a `.env` file:
-  ```
+
+  ```sh
   DATABASE_URL=postgres://user:pass@host:port/db
   ```
+
 - Or pass via CLI:
+
   ```bash
   npx ts-node src/cli-entry.ts --db "postgres://user:pass@host:port/db"
   ```
